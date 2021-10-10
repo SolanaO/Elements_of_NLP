@@ -15,7 +15,7 @@ The HMM tagger has one hidden state for each possible tag, and is parameterized 
 
 _This presentation is using Jupyter Notebook with a Python 3 kernel, using Pomegranate library._
 
-[Link: POS Tagging](http://htmlpreview.github.io/?https://github.com/SolanaO/Natural-Language-Processing/blob/master/HMM Tagger.html)
+[Link: POS Tagging](http://htmlpreview.github.io/?https://github.com/SolanaO/Natural-Language-Processing/blob/master/HMM_Tagger.html)
 
 
 ## Machine Translation Project
@@ -27,10 +27,10 @@ In this notebook (part of it provided by Udacity) I build a deep neural network 
   - _Prediction_ - run the model on English text sample.
 
 There are four models built in this project: 
-    - a simple RNN,
-    - a RNN with Embedding (from Keras),
-    - a Bidirectional RNN,
-    - an Encoder - Decoder RNN.
+- a simple RNN,
+- a RNN with Embedding (from Keras),
+- a Bidirectional RNN,
+- an Encoder - Decoder RNN.
 
 _This project requires GPU acceleration to run efficiently. The project is written in: Python 3, NumPy, TensorFlow 1.x, Keras 2.x._
 
