@@ -1,4 +1,4 @@
-## Welcome
+## Welcome!
 Find below short descriptions and links to the reports for the two projects I completed as part of a one term nanodegree in Natural Language Processing with Udacity (April 2020 - June 2020). In this program, I learned and put in practice the concepts behind natural
 language processing and speech recognition, including machine translation, part of speech tagging, and
 sentiment analysis. 
@@ -27,9 +27,9 @@ In this notebook (part of it provided by Udacity) I build a deep neural network 
   - _Prediction_ - run the model on English text sample.
 
 There are four models built in this project: 
-    - a simple RNN,
-    - a RNN with Embedding (from Keras),
-    - a Bidirectional RNN,
-    - an Encoder - Decoder RNN.
+- a simple RNN,
+- a RNN with Embedding (from Keras),
+- a Bidirectional RNN,
+- an Encoder - Decoder RNN.
 
 _This project requires GPU acceleration to run efficiently. The project is written in: Python 3, NumPy, TensorFlow 1.x, Keras 2.x._
