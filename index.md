@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## Welcome
+Find below short descriptions and links to the reports for the two projects I completed as part of a one term nanodegree in Natural Language Processing with Udacity (April 2020 - June 2020). In this program, I learned and put in practice the concepts behind natural
+language processing and speech recognition, including machine translation, part of speech tagging, and
+sentiment analysis. 
 
-You can use the [editor on GitHub](https://github.com/SolanaO/Natural-Language-Processing/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Part of Speech Tagging
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Part of speech tagging is the process of determining the syntactic category of a word from the words in its surrounding context. It is often used to help disambiguate natural language phrases because it can be done quickly with high accuracy. Tagging can be used for many NLP tasks such as for information retrieval or for word sense disambiguation.
 
-### Markdown
+The project is built on a template provided by Udacity. The approach uses the _Pomegranate library_ to build a _Hidden Markov Model (HMM)_ for part of speech tagging using an 'universal' tag set. Hidden Markov models have been able to achieve more than 96% tag accuracy with larger tag sets on realistic text corpora. These models have also been used for speech recognition and speech generation, machine translation, and human gesture recognition for computer vision, and more.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+There are two taggers constructed in this project. First a Most Frequent Class tagger to use as a baseline is built. A good baseline for tagger performance is to simply choose the tag most frequently assigned to each word. This 'most frequent class' tagger inspects each observed word in the sequence and assigns it the label that was most often assigned to that word in the corpus.
 
-```markdown
-Syntax highlighted code block
+The HMM tagger has one hidden state for each possible tag, and is parameterized by two distributions: the emission probabilities giving the conditional probability of observing a given word from each hidden state, and the transition probabilities giving the conditional probability of moving between tags during the sequence.
 
-# Header 1
-## Header 2
-### Header 3
+_This presentation is using Jupyter Notebook with a Python 3 kernel, using Pomegranate library._
 
-- Bulleted
-- List
+[Link: POS Tagging](http://htmlpreview.github.io/?https://github.com/SolanaO/Natural-Language-Processing/blob/master/dand.T1P1.Explore_Weather_Trends.html)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+## Machine Translation Project
 
-[Link](url) and ![Image](src)
-```
+In this notebook (part of it provided by Udacity) I build a deep neural network that functions as part of an end-to-end machine translation pipeline. The completed pipeline accepts English text as input and returns the French translation. The project has three parts:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  - _Preprocess_ - convert text to sequence of integers.<br>
+  - _Models_ - create several deep neural networks which accept a sequence of integers as input and return a probability distribution over possible translations.<br>
+  - _Prediction_ - run the model on English text sample.
 
-### Jekyll Themes
+There are four models built in this project: 
+    - a simple RNN,
+    - a RNN with Embedding (from Keras),
+    - a Bidirectional RNN,
+    - an Encoder - Decoder RNN.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SolanaO/Natural-Language-Processing/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+_This project requires GPU acceleration to run efficiently. The project is written in: Python 3, NumPy, TensorFlow 1.x, Keras 2.x._
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
