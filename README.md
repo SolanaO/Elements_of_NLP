@@ -1,4 +1,4 @@
-## Welcome!
+## Welcome
 Find below short descriptions and links to the reports for the two projects I completed as part of a one term nanodegree in Natural Language Processing with Udacity (April 2020 - June 2020). In this program, I learned and put in practice the concepts behind natural
 language processing and speech recognition, including machine translation, part of speech tagging, and
 sentiment analysis. 
@@ -15,7 +15,7 @@ The HMM tagger has one hidden state for each possible tag, and is parameterized 
 
 _This presentation is using Jupyter Notebook with a Python 3 kernel, using Pomegranate library._
 
-[Link: POS Tagging](http://htmlpreview.github.io/?https://github.com/SolanaO/Natural-Language-Processing/blob/master/dand.T1P1.Explore_Weather_Trends.html)
+[Link: POS Tagging](http://htmlpreview.github.io/?https://github.com/SolanaO/Natural-Language-Processing/blob/master/HMM_Tagger.html)
 
 
 ## Machine Translation Project
@@ -33,3 +33,5 @@ There are four models built in this project:
 - an Encoder - Decoder RNN.
 
 _This project requires GPU acceleration to run efficiently. The project is written in: Python 3, NumPy, TensorFlow 1.x, Keras 2.x._
+
+[Link: Machine Translation](http://htmlpreview.github.io/?https://github.com/SolanaO/Natural-Language-Processing/blob/master/machine_translation.html)
